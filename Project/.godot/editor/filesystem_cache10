@@ -1,8 +1,13 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1751381320
-camera_system.gd::GDScript::9059202224926357893::1751381285::0::1::::<>Node<><>0<>0<><>::
-export_presets.cfg::TextFile::-1::1751381285::0::1::::<><><>0<>0<><>::
-icon.svg::CompressedTexture2D/CompressedTexture2D::3174507910941451293::1751333894::1751381322::1::::<><><>0<>0<>1735ccda93574a6194602013fe0aa1b2<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
-MainScene.tscn::PackedScene::3719960710278216132::1751381285::0::1::::<><><>0<>0<><>::uid://dbngca386s1ii::::res://Assets/TreeDemo.png
-::res://Assets/::1751381285
-TreeDemo.png::CompressedTexture2D/CompressedTexture2D::7256655723860578080::1751381285::1751381324::1::::<><><>0<>0<>cd304bf3ac6cfdaf581e5079303f0a97<>res://.godot/imported/TreeDemo.png-c95a4530aa6956dacd5b6926a5d12661.ctex::
+::res://::1751393019
+camera_system.gd::GDScript/GDScript::9059202224926357893::1751392057::0::1::::<>Node<><>0<>0<><>::
+export_presets.cfg::TextFile/TextFile::-1::1751168077::0::1::::<><><>0<>0<><>::
+icon.svg::CompressedTexture2D/CompressedTexture2D::3174507910941451293::1751167942::1751167942::1::::<><><>0<>0<>1735ccda93574a6194602013fe0aa1b2<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
+interact test scene.tscn::PackedScene::5065208813026759347::1751392522::0::1::::<><><>0<>0<><>::uid://brd15o7xweaar::::res://Scripts/interactable.gd<>uid://dghbxbgsgpkdh::::res://test_interaction.gd
+MainScene.tscn::PackedScene::3719960710278216132::1751392522::0::1::::<><><>0<>0<><>::uid://dbngca386s1ii::::res://Assets/TreeDemo.png<>uid://brd15o7xweaar::::res://Scripts/interactable.gd
+test_interaction.gd::GDScript/GDScript::7594947610057128493::1751392087::0::1::::<>Node<><>0<>0<><>::
+::res://Assets/::1751331126
+TreeDemo.png::CompressedTexture2D/CompressedTexture2D::7256655723860578080::1751331113::1751331126::1::::<><><>0<>0<>cd304bf3ac6cfdaf581e5079303f0a97<>res://.godot/imported/TreeDemo.png-c95a4530aa6956dacd5b6926a5d12661.ctex::
+::res://Scripts/::1751392087
+interactable.gd::GDScript/GDScript::3587457160266120561::1751392087::0::1::::interactable<>Area2D<><>0<>0<><>::
+::res://Styles/::1751330436

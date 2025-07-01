@@ -11,6 +11,7 @@ config_version=5
 [application]
 
 config/name="Canopy"
+run/main_scene="uid://bs88hecpy8tei"
 config/features=PackedStringArray("4.4", "GL Compatibility")
 config/icon="res://icon.svg"
 

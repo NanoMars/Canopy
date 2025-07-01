@@ -1,11 +1,12 @@
+CanvasLayer
+PathFollow2D
+Path2D
+Line2D
 Node
 CollisionShape2D
 interactable
 Area2D
 ScrollContainer
-Path2D
-PathFollow2D
 Camera2D
 Marker2D
-Line2D
 TextureRect
