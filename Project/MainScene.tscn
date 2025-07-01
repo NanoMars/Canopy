@@ -2,7 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://dbngca386s1ii" path="res://Assets/TreeDemo.png" id="1_3mqji"]
 [ext_resource type="Script" uid="uid://d2cl0ccetonyb" path="res://camera_system.gd" id="1_rpqi1"]
-[ext_resource type="Script" uid="uid://brd15o7xweaar" path="res://Scripts/interactable.gd" id="2_x4av3"]
+[ext_resource type="Script" uid="uid://brd15o7xweaar" path="res://scripts/interactable.gd" id="2_x4av3"]
 
 [sub_resource type="Curve2D" id="Curve2D_uxrcv"]
 _data = {
