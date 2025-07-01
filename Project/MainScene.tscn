@@ -1,10 +1,14 @@
-[gd_scene load_steps=3 format=3 uid="uid://bs88hecpy8tei"]
+[gd_scene load_steps=5 format=3 uid="uid://bs88hecpy8tei"]
 
 [ext_resource type="Texture2D" uid="uid://dbngca386s1ii" path="res://Assets/TreeDemo.png" id="1_3mqji"]
+[ext_resource type="Script" uid="uid://brd15o7xweaar" path="res://scripts/interactable.gd" id="2_x4av3"]
 
 [sub_resource type="GDScript" id="GDScript_1305s"]
 script/source = "extends Node
 "
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_rpqi1"]
+radius = 130.863
 
 [node name="Control" type="Control"]
 layout_mode = 3
@@ -36,3 +40,11 @@ position = Vector2(597, 332)
 [node name="Line2D" type="Line2D" parent="Node"]
 position = Vector2(302, 501)
 points = PackedVector2Array(294, -117, 306, -354, 249, -571, 187, -768, 629, -1041, 383, -1376, 742, -1617, 318, -1813)
+
+[node name="interactable" type="Area2D" parent="."]
+script = ExtResource("2_x4av3")
+metadata/_custom_type_script = "uid://brd15o7xweaar"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="interactable"]
+position = Vector2(550, 200)
+shape = SubResource("CircleShape2D_rpqi1")

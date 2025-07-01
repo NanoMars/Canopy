@@ -1,2 +1,4 @@
 res://MainScene.tscn
-res://camera_system.gd
+res://scripts/interactable.gd
+res://interact test scene.tscn
+res://test_interaction.gd
