@@ -1,0 +1,38 @@
+[gd_scene load_steps=3 format=3 uid="uid://bs88hecpy8tei"]
+
+[ext_resource type="Texture2D" uid="uid://dbngca386s1ii" path="res://Assets/TreeDemo.png" id="1_3mqji"]
+
+[sub_resource type="GDScript" id="GDScript_1305s"]
+script/source = "extends Node
+"
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="."]
+custom_minimum_size = Vector2(200, 0)
+layout_mode = 0
+offset_left = 6.0
+offset_top = -2106.0
+offset_right = 1947.0
+offset_bottom = 654.0
+texture = ExtResource("1_3mqji")
+expand_mode = 1
+stretch_mode = 4
+
+[node name="Node" type="Node" parent="."]
+script = SubResource("GDScript_1305s")
+
+[node name="Marker2D" type="Marker2D" parent="Node"]
+position = Vector2(597, 332)
+
+[node name="Camera2D" type="Camera2D" parent="Node/Marker2D"]
+
+[node name="Line2D" type="Line2D" parent="Node"]
+position = Vector2(302, 501)
+points = PackedVector2Array(294, -117, 306, -354, 249, -571, 187, -768, 629, -1041, 383, -1376, 742, -1617, 318, -1813)
