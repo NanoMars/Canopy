@@ -1,8 +1,14 @@
 ~ start
-Hermit Thrush: Hi, its great to see you in the canopy!
-Hermit Thrush: your timing is perfect, we happen to have an event coming up this monday!
-Hermit Thrush: I have an invitation letter with more info on it if you would like to learn more.
-- Accept letter
-	Hermit Thrush: Here you go, see you monday
-- Decline => END
+if DialogueGlobals.invitation_found
+	Hermit Thrush: Go check your mailbox to learn more about the event!
+else
+	Hermit Thrush: Hi, its great to see you in the canopy!
+	Hermit Thrush: your timing is perfect, we happen to have an event coming up this monday!
+	Hermit Thrush: I have an invitation letter if you would like to learn more.
+	set DialogueGlobals.invitation_found
+	- Accept letter
+		Hermit Thrush: Here you go, see you monday!
+		(The letter can now be viewed in your mailbox)
+		set DialogueGlobals.invitation_found = true
+	- Decline => END
 => END

@@ -1,3 +1,6 @@
 res://interact test scene.tscn
-res://MainScene.tscn
 res://dialogue/start_dialogue.gd
+res://MainScene.tscn
+res://dialogue/balloon.tscn
+res://scripts/scene_inst_interact.gd
+res://mailbox_popup.tscn

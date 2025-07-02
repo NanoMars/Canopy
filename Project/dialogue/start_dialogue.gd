@@ -18,9 +18,12 @@ func _ready() -> void:
 
 func add_balloon():
 	var new_balloon = balloonscene.instantiate()
+	#get_tree().get_first_node_in_group("main").add_child(new_balloon)
 	add_child(new_balloon)
+	#$"../../../CameraManager/CameraPath/CameraThingy/Camera2D".add_child(new_balloon)
 	balloon = new_balloon
 
 func interacted():
+	print("iooogaobooga")
 	add_balloon()
 	balloon.start(dialogue_res, "start")

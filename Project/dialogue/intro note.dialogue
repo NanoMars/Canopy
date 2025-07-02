@@ -1,0 +1,11 @@
+~ start
+#As you look up at the towering tree, the canopy spread wide above the forest floor, you notice somthing.
+#YouThere is a note fastened to the trunk.
+#- Take
+	
+
+You find a handwriten note left at the base of the tree.
+Its now added to your mailbox! go there to read its contents.
+#set DialogueGlobals.intronote_found = true
+set DialogueGlobals.intronote_found = true
+=> END

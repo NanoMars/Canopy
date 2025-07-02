@@ -1,18 +1,22 @@
 extends Area2D
 class_name interactable
 
+var inside = false
+
 #here we can set up button noises and cursor effects
 func _ready() -> void:
 	input_pickable = true
 
 func _mouse_enter() -> void:
+	inside = true
 	print("mouse_enter")
 
 func _mouse_exit() -> void:
+	inside = false
 	print("mouse_exit")
 
 func _input(event: InputEvent) -> void:
-	if event is InputEventMouseButton and event.is_pressed() and event.button_index == MOUSE_BUTTON_LEFT:
+	if event is InputEventMouseButton and event.is_pressed() and event.button_index == MOUSE_BUTTON_LEFT and inside == true:
 		left_clicked()
 		
 
@@ -23,3 +27,4 @@ func left_clicked() -> void:
 		for i in get_children():
 			if i.is_in_group("interactable"):
 				i.interacted()
+				print("interact")

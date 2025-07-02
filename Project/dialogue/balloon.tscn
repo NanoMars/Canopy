@@ -1,6 +1,6 @@
 [gd_scene load_steps=9 format=3 uid="uid://c5upcc65x4bmi"]
 
-[ext_resource type="Script" uid="uid://ytqiak4nlymi" path="res://dialogue/balloon.gd" id="1_36de5"]
+[ext_resource type="Script" uid="uid://bd4la3tuo8o1x" path="res://dialogue/balloon.gd" id="1_36de5"]
 [ext_resource type="PackedScene" uid="uid://ckvgyvclnwggo" path="res://addons/dialogue_manager/dialogue_label.tscn" id="2_a8ve6"]
 [ext_resource type="Script" uid="uid://bb52rsfwhkxbn" path="res://addons/dialogue_manager/dialogue_responses_menu.gd" id="3_72ixx"]
 
@@ -116,21 +116,22 @@ text = "Dialogue..."
 
 [node name="ResponsesMenu" type="VBoxContainer" parent="Balloon" node_paths=PackedStringArray("response_template")]
 unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 120)
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -290.5
-offset_top = -35.0
-offset_right = 290.5
-offset_bottom = 35.0
+offset_left = -301.0
+offset_top = 21.0
+offset_right = 280.0
+offset_bottom = 141.0
 grow_horizontal = 2
 grow_vertical = 2
 size_flags_vertical = 8
 theme_override_constants/separation = 2
-alignment = 1
+alignment = 2
 script = ExtResource("3_72ixx")
 response_template = NodePath("ResponseExample")
 

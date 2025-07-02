@@ -1,21 +1,29 @@
-[gd_scene load_steps=8 format=3 uid="uid://bs88hecpy8tei"]
+[gd_scene load_steps=12 format=3 uid="uid://bs88hecpy8tei"]
 
 [ext_resource type="Texture2D" uid="uid://dbngca386s1ii" path="res://Assets/TreeDemo.png" id="1_3mqji"]
 [ext_resource type="Script" uid="uid://d2cl0ccetonyb" path="res://camera_system.gd" id="1_rpqi1"]
 [ext_resource type="Script" uid="uid://brd15o7xweaar" path="res://scripts/interactable.gd" id="2_x4av3"]
 [ext_resource type="Script" uid="uid://c74bn1t0f57ms" path="res://dialogue/start_dialogue.gd" id="4_uxrcv"]
+[ext_resource type="Resource" uid="uid://c8wj7ru65ohmt" path="res://dialogue/intro note.dialogue" id="5_a814b"]
 [ext_resource type="Resource" uid="uid://xjyg8lppk20b" path="res://dialogue/bird.dialogue" id="5_rf2cd"]
+[ext_resource type="Script" uid="uid://bcyvics8fkqx0" path="res://scripts/scene_inst_interact.gd" id="7_5crlr"]
+[ext_resource type="PackedScene" uid="uid://m780u6uv7dg7" path="res://mailbox_popup.tscn" id="8_hbc2u"]
 
 [sub_resource type="Curve2D" id="Curve2D_uxrcv"]
 _data = {
 "points": PackedVector2Array(0, 0, 0, 0, 455, 71, 70.171, 261.858, -70.171, -261.858, 927, -1109, 0, 212.225, 0, -212.225, 162, -1901, 3.42298, 145.476, -3.42298, -145.476, 924, -2574, -1.72614, 286.539, 1.72614, -286.539, 271, -3279, -133.496, 8.55744, 133.496, -8.55744, 587, -3600)
+"points": PackedVector2Array(0, 0, 0, 0, 543, 317, 70.171, 261.858, -70.171, -261.858, 927, -1109, 0, 212.225, 0, -212.225, 162, -1901, 3.42298, 145.476, -3.42298, -145.476, 924, -2574, -1.72614, 286.539, 1.72614, -286.539, 271, -3279, -133.496, 8.55744, 133.496, -8.55744, 587, -3600)
 }
 point_count = 6
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_rpqi1"]
 radius = 196.003
 
-[node name="Control" type="Control"]
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_a814b"]
+radius = 18.824
+height = 52.6445
+
+[node name="Control" type="Control" groups=["main"]]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -29,26 +37,36 @@ script = ExtResource("1_rpqi1")
 path_follow = NodePath("CameraPath/CameraThingy")
 camera_path = NodePath("CameraPath")
 goal_increment = 32.0
+scroll_goal_increment = 30.0
+pan_goal_increment = 20.0
 marker_elasticity = 6.0
 marker_drag = 0.8
+marker_drag = 0.75
 
 [node name="CameraPath" type="Path2D" parent="CameraManager"]
 curve = SubResource("Curve2D_uxrcv")
 
 [node name="CameraThingy" type="PathFollow2D" parent="CameraManager/CameraPath"]
 position = Vector2(455, 71)
+position = Vector2(578.572, 223.548)
 rotation = -1.19692
+progress = 100.0
 rotates = false
 loop = false
 
 [node name="Camera2D" type="Camera2D" parent="CameraManager/CameraPath/CameraThingy"]
+<<<<<<< HEAD
+zoom = Vector2(0.5, 0.5)
+=======
+zoom = Vector2(0.6, 0.6)
+>>>>>>> 3146e2a0d69c1e026ea64a42e3519ac32a79e9ea
 
 [node name="TextureRect" type="TextureRect" parent="."]
 custom_minimum_size = Vector2(200, 0)
 layout_mode = 0
-offset_left = -399.0
+offset_left = -513.0
 offset_top = -3892.0
-offset_right = 1562.0
+offset_right = 1448.0
 offset_bottom = 762.0
 mouse_filter = 2
 texture = ExtResource("1_3mqji")
@@ -57,22 +75,40 @@ stretch_mode = 4
 
 [node name="Node" type="Node" parent="."]
 
-[node name="interactable" type="Area2D" parent="Node"]
+[node name="intro note" type="Area2D" parent="Node"]
+position = Vector2(400, 0)
 script = ExtResource("2_x4av3")
 metadata/_custom_type_script = "uid://brd15o7xweaar"
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Node/interactable"]
-position = Vector2(509, 5)
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node/intro note"]
 shape = SubResource("CircleShape2D_rpqi1")
 
+[node name="start_dialogue" type="Node" parent="Node/intro note" groups=["interactable"]]
+script = ExtResource("4_uxrcv")
+dialogue_res = ExtResource("5_a814b")
+
 [node name="bird" type="Area2D" parent="Node"]
+position = Vector2(-76, -2087)
 script = ExtResource("2_x4av3")
 metadata/_custom_type_script = "uid://brd15o7xweaar"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Node/bird"]
-position = Vector2(27, -2036)
 shape = SubResource("CircleShape2D_rpqi1")
 
 [node name="start_dialogue" type="Node" parent="Node/bird" groups=["interactable"]]
 script = ExtResource("4_uxrcv")
 dialogue_res = ExtResource("5_rf2cd")
+
+[node name="mailbox" type="Area2D" parent="Node"]
+position = Vector2(1202, 310)
+script = ExtResource("2_x4av3")
+metadata/_custom_type_script = "uid://brd15o7xweaar"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node/mailbox"]
+scale = Vector2(7.70293, 7.63613)
+shape = SubResource("CapsuleShape2D_a814b")
+
+[node name="inst_menu" type="Node" parent="Node/mailbox" groups=["interactable"]]
+script = ExtResource("7_5crlr")
+scene = ExtResource("8_hbc2u")
+parent_node = NodePath("../../..")
