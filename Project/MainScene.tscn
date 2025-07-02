@@ -11,7 +11,6 @@
 
 [sub_resource type="Curve2D" id="Curve2D_uxrcv"]
 _data = {
-"points": PackedVector2Array(0, 0, 0, 0, 455, 71, 70.171, 261.858, -70.171, -261.858, 927, -1109, 0, 212.225, 0, -212.225, 162, -1901, 3.42298, 145.476, -3.42298, -145.476, 924, -2574, -1.72614, 286.539, 1.72614, -286.539, 271, -3279, -133.496, 8.55744, 133.496, -8.55744, 587, -3600)
 "points": PackedVector2Array(0, 0, 0, 0, 543, 317, 70.171, 261.858, -70.171, -261.858, 927, -1109, 0, 212.225, 0, -212.225, 162, -1901, 3.42298, 145.476, -3.42298, -145.476, 924, -2574, -1.72614, 286.539, 1.72614, -286.539, 271, -3279, -133.496, 8.55744, 133.496, -8.55744, 587, -3600)
 }
 point_count = 6
@@ -55,11 +54,7 @@ rotates = false
 loop = false
 
 [node name="Camera2D" type="Camera2D" parent="CameraManager/CameraPath/CameraThingy"]
-<<<<<<< HEAD
 zoom = Vector2(0.5, 0.5)
-=======
-zoom = Vector2(0.6, 0.6)
->>>>>>> 3146e2a0d69c1e026ea64a42e3519ac32a79e9ea
 
 [node name="TextureRect" type="TextureRect" parent="."]
 custom_minimum_size = Vector2(200, 0)
