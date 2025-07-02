@@ -1,8 +1,10 @@
-[gd_scene load_steps=6 format=3 uid="uid://bs88hecpy8tei"]
+[gd_scene load_steps=8 format=3 uid="uid://bs88hecpy8tei"]
 
 [ext_resource type="Texture2D" uid="uid://dbngca386s1ii" path="res://Assets/TreeDemo.png" id="1_3mqji"]
 [ext_resource type="Script" uid="uid://d2cl0ccetonyb" path="res://camera_system.gd" id="1_rpqi1"]
-[ext_resource type="Script" uid="uid://brd15o7xweaar" path="res://Scripts/interactable.gd" id="2_x4av3"]
+[ext_resource type="Script" uid="uid://brd15o7xweaar" path="res://scripts/interactable.gd" id="2_x4av3"]
+[ext_resource type="Script" uid="uid://c74bn1t0f57ms" path="res://dialogue/start_dialogue.gd" id="4_uxrcv"]
+[ext_resource type="Resource" uid="uid://xjyg8lppk20b" path="res://dialogue/bird.dialogue" id="5_rf2cd"]
 
 [sub_resource type="Curve2D" id="Curve2D_uxrcv"]
 _data = {
@@ -11,7 +13,7 @@ _data = {
 point_count = 6
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_rpqi1"]
-radius = 130.863
+radius = 196.003
 
 [node name="Control" type="Control"]
 layout_mode = 3
@@ -53,10 +55,24 @@ texture = ExtResource("1_3mqji")
 expand_mode = 1
 stretch_mode = 4
 
-[node name="interactable" type="Area2D" parent="."]
+[node name="Node" type="Node" parent="."]
+
+[node name="interactable" type="Area2D" parent="Node"]
 script = ExtResource("2_x4av3")
 metadata/_custom_type_script = "uid://brd15o7xweaar"
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="interactable"]
-position = Vector2(550, 200)
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node/interactable"]
+position = Vector2(509, 5)
 shape = SubResource("CircleShape2D_rpqi1")
+
+[node name="bird" type="Area2D" parent="Node"]
+script = ExtResource("2_x4av3")
+metadata/_custom_type_script = "uid://brd15o7xweaar"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node/bird"]
+position = Vector2(27, -2036)
+shape = SubResource("CircleShape2D_rpqi1")
+
+[node name="start_dialogue" type="Node" parent="Node/bird"]
+script = ExtResource("4_uxrcv")
+dialogue_res = ExtResource("5_rf2cd")

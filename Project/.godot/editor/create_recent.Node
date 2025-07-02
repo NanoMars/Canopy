@@ -1,8 +1,8 @@
+Node
 CanvasLayer
 PathFollow2D
 Path2D
 Line2D
-Node
 CollisionShape2D
 interactable
 Area2D
