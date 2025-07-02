@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://dfpbfva30qwdv"
+path="res://.godot/imported/tokenchest.dialogue-c87ae0f1b1117ca45b2b3d912c761e2a.tres"
+
+[deps]
+
+source_file="res://dialogue/tokenchest.dialogue"
+dest_files=["res://.godot/imported/tokenchest.dialogue-c87ae0f1b1117ca45b2b3d912c761e2a.tres"]
+
+[params]
+
+defaults=true

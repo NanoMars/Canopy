@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://bs88hecpy8tei"]
+[gd_scene load_steps=14 format=3 uid="uid://bs88hecpy8tei"]
 
 [ext_resource type="Texture2D" uid="uid://dbngca386s1ii" path="res://Assets/TreeDemo.png" id="1_3mqji"]
 [ext_resource type="Script" uid="uid://d2cl0ccetonyb" path="res://camera_system.gd" id="1_rpqi1"]
@@ -8,6 +8,7 @@
 [ext_resource type="Resource" uid="uid://xjyg8lppk20b" path="res://dialogue/bird.dialogue" id="5_rf2cd"]
 [ext_resource type="Script" uid="uid://bcyvics8fkqx0" path="res://scripts/scene_inst_interact.gd" id="7_5crlr"]
 [ext_resource type="PackedScene" uid="uid://m780u6uv7dg7" path="res://mailbox_popup.tscn" id="8_hbc2u"]
+[ext_resource type="Resource" uid="uid://dfpbfva30qwdv" path="res://dialogue/tokenchest.dialogue" id="9_torvr"]
 
 [sub_resource type="Curve2D" id="Curve2D_uxrcv"]
 _data = {
@@ -21,6 +22,9 @@ radius = 196.003
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_a814b"]
 radius = 18.824
 height = 52.6445
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_hbc2u"]
+radius = 201.01
 
 [node name="Control" type="Control" groups=["main"]]
 layout_mode = 3
@@ -39,14 +43,12 @@ goal_increment = 32.0
 scroll_goal_increment = 30.0
 pan_goal_increment = 20.0
 marker_elasticity = 6.0
-marker_drag = 0.8
 marker_drag = 0.75
 
 [node name="CameraPath" type="Path2D" parent="CameraManager"]
 curve = SubResource("Curve2D_uxrcv")
 
 [node name="CameraThingy" type="PathFollow2D" parent="CameraManager/CameraPath"]
-position = Vector2(455, 71)
 position = Vector2(578.572, 223.548)
 rotation = -1.19692
 progress = 100.0
@@ -107,3 +109,15 @@ shape = SubResource("CapsuleShape2D_a814b")
 script = ExtResource("7_5crlr")
 scene = ExtResource("8_hbc2u")
 parent_node = NodePath("../../..")
+
+[node name="token_chest" type="Area2D" parent="Node"]
+script = ExtResource("2_x4av3")
+metadata/_custom_type_script = "uid://brd15o7xweaar"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node/token_chest"]
+position = Vector2(972, -1307)
+shape = SubResource("CircleShape2D_hbc2u")
+
+[node name="start_dialogue" type="Node" parent="Node/token_chest" groups=["interactable"]]
+script = ExtResource("4_uxrcv")
+dialogue_res = ExtResource("9_torvr")
