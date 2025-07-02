@@ -73,6 +73,6 @@ metadata/_custom_type_script = "uid://brd15o7xweaar"
 position = Vector2(27, -2036)
 shape = SubResource("CircleShape2D_rpqi1")
 
-[node name="start_dialogue" type="Node" parent="Node/bird"]
+[node name="start_dialogue" type="Node" parent="Node/bird" groups=["interactable"]]
 script = ExtResource("4_uxrcv")
 dialogue_res = ExtResource("5_rf2cd")
