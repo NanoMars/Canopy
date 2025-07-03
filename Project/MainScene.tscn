@@ -2,15 +2,12 @@
 
 [ext_resource type="Texture2D" uid="uid://dbngca386s1ii" path="res://Assets/TreeDemo.png" id="1_3mqji"]
 [ext_resource type="Script" uid="uid://d2cl0ccetonyb" path="res://camera_system.gd" id="1_rpqi1"]
-[ext_resource type="Script" uid="uid://brd15o7xweaar" path="res://scripts/interactable.gd" id="2_x4av3"]
-<<<<<<< HEAD
+[ext_resource type="Script" uid="uid://brd15o7xweaar" path="res://Scripts/interactable.gd" id="2_x4av3"]
 [ext_resource type="Script" uid="uid://c74bn1t0f57ms" path="res://dialogue/start_dialogue.gd" id="4_uxrcv"]
 [ext_resource type="Resource" uid="uid://c8wj7ru65ohmt" path="res://dialogue/intro note.dialogue" id="5_a814b"]
 [ext_resource type="Resource" uid="uid://xjyg8lppk20b" path="res://dialogue/bird.dialogue" id="5_rf2cd"]
-[ext_resource type="Script" uid="uid://bcyvics8fkqx0" path="res://scripts/scene_inst_interact.gd" id="7_5crlr"]
+[ext_resource type="Script" uid="uid://bcyvics8fkqx0" path="res://Scripts/scene_inst_interact.gd" id="7_5crlr"]
 [ext_resource type="PackedScene" uid="uid://m780u6uv7dg7" path="res://mailbox_popup.tscn" id="8_hbc2u"]
-=======
->>>>>>> 00cb59dfcce830790e721e80fffd5c2a9b397d72
 
 [sub_resource type="Curve2D" id="Curve2D_uxrcv"]
 _data = {
@@ -38,18 +35,16 @@ mouse_filter = 2
 script = ExtResource("1_rpqi1")
 path_follow = NodePath("CameraPath/CameraThingy")
 camera_path = NodePath("CameraPath")
-goal_increment = 32.0
-scroll_goal_increment = 30.0
-pan_goal_increment = 20.0
+scroll_goal_increment = 100000.0
+pan_goal_increment = 1500.0
+max_goal_velocity = 5000.0
 marker_elasticity = 6.0
 marker_drag = 0.8
-marker_drag = 0.75
 
 [node name="CameraPath" type="Path2D" parent="CameraManager"]
 curve = SubResource("Curve2D_uxrcv")
 
 [node name="CameraThingy" type="PathFollow2D" parent="CameraManager/CameraPath"]
-position = Vector2(455, 71)
 position = Vector2(578.572, 223.548)
 rotation = -1.19692
 progress = 100.0

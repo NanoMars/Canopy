@@ -1,3 +1,2 @@
-res://interact test scene.tscn
+res://camera_system.gd
 res://MainScene.tscn
-res://scripts/audiocontroller.gd

@@ -5,46 +5,43 @@ extends Node
 @onready var max_progress: float = camera_path.curve.get_baked_length()
 
 var goal: float = 0.0
-@export var goal_increment: float = 0.1
 @export var scroll_goal_increment: float = 6
 @export var pan_goal_increment: float = 1
+var goal_velocity: float = 0.0
+@export var goal_drag: float = 0.5
+@export var max_goal_velocity: float = 100
+
 
 var marker_velocity: float = 0.0
 @export var marker_elasticity: float = 0.1
 @export var marker_drag: float = 0.1
 @export var end_buffer: float = 100
-@export var scroll_curve: Curve
-@export var max_difference: float = 20
 
 # how do I do an export 
 
 func _input(event):
-	var original_goal = goal
-	var temp_goal = goal
-
 	if event is InputEventMouseButton:
 		if event.button_index == MOUSE_BUTTON_WHEEL_UP:
-			goal += goal_increment
-			goal = clamp(goal, end_buffer, max_progress - end_buffer)
-			temp_goal += scroll_goal_increment
+			goal_velocity += scroll_goal_increment
 		elif event.button_index == MOUSE_BUTTON_WHEEL_DOWN:
-			goal -= goal_increment	
-			goal = clamp(goal, end_buffer, max_progress - end_buffer)
-			temp_goal -= scroll_goal_increment	
-	
-	elif event is InputEventPanGesture:
-		goal += -event.delta.y * goal_increment
-		temp_goal += -event.delta.y * pan_goal_increment
+			goal_velocity -= scroll_goal_increment
 
-	if temp_goal != original_goal:
-		if abs(temp_goal - goal) > max_difference:
-			temp_goal = goal + sign(temp_goal - goal) * max_difference
-		goal = temp_goal
-		goal = clamp(goal, end_buffer, max_progress - end_buffer)
+	elif event is InputEventPanGesture:
+		goal_velocity += -event.delta.y * pan_goal_increment
+
+
+		
 		
 	
 	
 func _process(delta):
+	# Update goal based on velocity
+	goal_velocity *= goal_drag
+	goal_velocity = clamp(goal_velocity, -max_goal_velocity, max_goal_velocity)
+	goal += goal_velocity * delta
+	
+
+	goal = clamp(goal, end_buffer, max_progress - end_buffer)
 	var temp_pos = path_follow.progress
 
 
