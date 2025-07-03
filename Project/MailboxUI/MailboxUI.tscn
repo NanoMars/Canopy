@@ -1,7 +1,9 @@
-[gd_scene load_steps=5 format=3 uid="uid://chby8qgw4v4pa"]
+[gd_scene load_steps=7 format=3 uid="uid://chby8qgw4v4pa"]
 
 [ext_resource type="StyleBox" uid="uid://bvnk8lomek30d" path="res://Styles/grey_background.tres" id="1_dhkmh"]
+[ext_resource type="Script" uid="uid://bxgkelbinlrnx" path="res://MailboxUI/mailbox_ui.gd" id="1_uo4m8"]
 [ext_resource type="Texture2D" uid="uid://b8jsjx7j4udl6" path="res://MailboxUI/Box UI@2x.png" id="2_o2rh0"]
+[ext_resource type="Texture2D" uid="uid://cwopcdacto5tq" path="res://Assets/Placeholder TokenScroll.png" id="3_2gjnv"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_o2rh0"]
 
@@ -11,13 +13,15 @@ Button/styles/hover = ExtResource("1_dhkmh")
 Button/styles/normal = ExtResource("1_dhkmh")
 Button/styles/pressed = ExtResource("1_dhkmh")
 
-[node name="Control" type="Control"]
+[node name="Control" type="Control" node_paths=PackedStringArray("close_button")]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_uo4m8")
+close_button = NodePath("Button")
 
 [node name="Button" type="Button" parent="."]
 layout_mode = 1
@@ -73,3 +77,24 @@ text = "Mailbox"
 [node name="HFlowContainer" type="HFlowContainer" parent="CenterContainer/MarginContainer/VBoxContainer"]
 layout_mode = 2
 size_flags_vertical = 3
+
+[node name="TextureRect" type="TextureRect" parent="CenterContainer/MarginContainer/VBoxContainer/HFlowContainer"]
+custom_minimum_size = Vector2(130, 130)
+layout_mode = 2
+texture = ExtResource("3_2gjnv")
+expand_mode = 1
+stretch_mode = 4
+
+[node name="TextureRect2" type="TextureRect" parent="CenterContainer/MarginContainer/VBoxContainer/HFlowContainer"]
+custom_minimum_size = Vector2(130, 130)
+layout_mode = 2
+texture = ExtResource("3_2gjnv")
+expand_mode = 1
+stretch_mode = 4
+
+[node name="TextureRect3" type="TextureRect" parent="CenterContainer/MarginContainer/VBoxContainer/HFlowContainer"]
+custom_minimum_size = Vector2(130, 130)
+layout_mode = 2
+texture = ExtResource("3_2gjnv")
+expand_mode = 1
+stretch_mode = 4

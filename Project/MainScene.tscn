@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://bs88hecpy8tei"]
+[gd_scene load_steps=15 format=3 uid="uid://bs88hecpy8tei"]
 
 [ext_resource type="Texture2D" uid="uid://dbngca386s1ii" path="res://Assets/TreeDemo.png" id="1_3mqji"]
 [ext_resource type="Script" uid="uid://d2cl0ccetonyb" path="res://camera_system.gd" id="1_rpqi1"]
@@ -8,6 +8,9 @@
 [ext_resource type="Resource" uid="uid://xjyg8lppk20b" path="res://dialogue/bird.dialogue" id="5_rf2cd"]
 [ext_resource type="Script" uid="uid://bcyvics8fkqx0" path="res://Scripts/scene_inst_interact.gd" id="7_5crlr"]
 [ext_resource type="PackedScene" uid="uid://m780u6uv7dg7" path="res://mailbox_popup.tscn" id="8_hbc2u"]
+[ext_resource type="Texture2D" uid="uid://cu8w83tyf5mkt" path="res://Assets/open-red-mailbox-with-letters-3d-illustration-render-png.png" id="9_p5x2j"]
+[ext_resource type="Script" uid="uid://dv2pux88opi53" path="res://Mailbox.gd" id="10_yvb8b"]
+[ext_resource type="PackedScene" uid="uid://chby8qgw4v4pa" path="res://MailboxUI/MailboxUI.tscn" id="11_3hf6u"]
 
 [sub_resource type="Curve2D" id="Curve2D_uxrcv"]
 _data = {
@@ -105,3 +108,15 @@ shape = SubResource("CapsuleShape2D_a814b")
 script = ExtResource("7_5crlr")
 scene = ExtResource("8_hbc2u")
 parent_node = NodePath("../../..")
+
+[node name="TextureButton" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = -476.0
+offset_top = 253.0
+offset_right = -117.0
+offset_bottom = 762.0
+texture_normal = ExtResource("9_p5x2j")
+ignore_texture_size = true
+stretch_mode = 0
+script = ExtResource("10_yvb8b")
+mailbox_UI_scene = ExtResource("11_3hf6u")

@@ -1,12 +1,12 @@
 afef6734802ee6c19677a3e11de0f0e6
-::res://::1751572928
+::res://::1751574198
 camera_system.gd::GDScript::9059202224926357893::1751509547::0::1::::<>Node<><>0<>0<><>::
 dialogue_globals.gd::GDScript/GDScript::9069998703275271344::1751481397::0::1::::<>Node<><>0<>0<><>::
 export_presets.cfg::TextFile/TextFile::-1::1751168077::0::1::::<><><>0<>0<><>::
 icon.svg::CompressedTexture2D/CompressedTexture2D::3174507910941451293::1751167942::1751167942::1::::<><><>0<>0<>1735ccda93574a6194602013fe0aa1b2<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
 interact test scene.tscn::PackedScene::5065208813026759347::1751509547::0::1::::<><><>0<>0<><>::uid://brd15o7xweaar::::res://scripts/interactable.gd<>uid://dghbxbgsgpkdh::::res://test_interaction.gd
 mailbox_popup.tscn::PackedScene/PackedScene::910375616689189896::1751481665::0::1::::<><><>0<>0<><>::
-MainScene.tscn::PackedScene::3719960710278216132::1751572928::0::1::::<><><>0<>0<><>::uid://dbngca386s1ii::::res://Assets/TreeDemo.png<>uid://d2cl0ccetonyb::::res://camera_system.gd<>uid://brd15o7xweaar::::res://Scripts/interactable.gd<>uid://c74bn1t0f57ms::::res://dialogue/start_dialogue.gd<>uid://c8wj7ru65ohmt::::res://dialogue/intro note.dialogue<>uid://xjyg8lppk20b::::res://dialogue/bird.dialogue<>uid://bcyvics8fkqx0::::res://Scripts/scene_inst_interact.gd<>uid://m780u6uv7dg7::::res://mailbox_popup.tscn
+MainScene.tscn::PackedScene::3719960710278216132::1751574198::0::1::::<><><>0<>0<><>::uid://dbngca386s1ii::::res://Assets/TreeDemo.png<>uid://d2cl0ccetonyb::::res://camera_system.gd<>uid://brd15o7xweaar::::res://Scripts/interactable.gd<>uid://c74bn1t0f57ms::::res://dialogue/start_dialogue.gd<>uid://c8wj7ru65ohmt::::res://dialogue/intro note.dialogue<>uid://xjyg8lppk20b::::res://dialogue/bird.dialogue<>uid://bcyvics8fkqx0::::res://Scripts/scene_inst_interact.gd<>uid://m780u6uv7dg7::::res://mailbox_popup.tscn
 test_interaction.gd::GDScript/GDScript::7594947610057128493::1751392087::0::1::::<>Node<><>0<>0<><>::
 ::res://addons/::1751424441
 ::res://addons/dialogue_manager/::1751424441
@@ -84,8 +84,10 @@ dialogue_cache.gd::GDScript/GDScript::9130733358047983146::1751424441::0::1::::D
 ::res://addons/dialogue_manager/views/::1751424441
 main_view.gd::GDScript/GDScript::5365867961863611872::1751424441::0::1::::<>Control<><>0<>1<><>::
 main_view.tscn::PackedScene/PackedScene::4884668666408697448::1751424441::0::1::::<><><>0<>0<><>::uid://cipjcc7bkh1pc::::res://addons/dialogue_manager/views/main_view.gd<>uid://civ6shmka5e8u::::res://addons/dialogue_manager/components/code_edit.tscn<>uid://dnufpcdrreva3::::res://addons/dialogue_manager/components/files_list.tscn<>uid://ctns6ouwwd68i::::res://addons/dialogue_manager/components/title_list.tscn<>uid://co8yl23idiwbi::::res://addons/dialogue_manager/components/update_button.tscn<>uid://gr8nakpbrhby::::res://addons/dialogue_manager/components/search_and_replace.tscn<>uid://cs8pwrxr5vxix::::res://addons/dialogue_manager/components/errors_panel.tscn<>uid://klpiq4tk3t7a::::res://addons/dialogue_manager/components/code_edit_syntax_highlighter.gd<>uid://cnm67htuohhlo::::res://addons/dialogue_manager/assets/banner.png<>uid://0n7hwviyyly4::::res://addons/dialogue_manager/components/find_in_files.tscn
-::res://Assets/::1751502587
+::res://Assets/::1751583141
 green-betel-leaf-isolated-on-transparent-background-png.webp::CompressedTexture2D/CompressedTexture2D::4938211675205102556::1751481561::1751502587::1::::<><><>0<>0<>7ee47f369c855c1949387e77e3441b27<>res://.godot/imported/green-betel-leaf-isolated-on-transparent-background-png.webp-a3dfc7d858a66cc18e2c00d859440d17.ctex::
+open-red-mailbox-with-letters-3d-illustration-render-png.png::CompressedTexture2D::6246138912173959319::1751583141::1751583142::1::::<><><>0<>0<>7d7010766bb526fae235a0a157aecbd9<>res://.godot/imported/open-red-mailbox-with-letters-3d-illustration-render-png.png-b894c20cdd9d2a7780214b204f4f2166.ctex::
+Placeholder TokenScroll.png::CompressedTexture2D::6346811700145955438::1751575133::1751575133::1::::<><><>0<>0<>526848662e7de79191215cf2357c8e60<>res://.godot/imported/Placeholder TokenScroll.png-19b2a85e85fe0dc7c0b69d37eee2bdcb.ctex::
 TreeDemo.png::CompressedTexture2D/CompressedTexture2D::7256655723860578080::1751331113::1751331126::1::::<><><>0<>0<>cd304bf3ac6cfdaf581e5079303f0a97<>res://.godot/imported/TreeDemo.png-c95a4530aa6956dacd5b6926a5d12661.ctex::
 ::res://dialogue/::1751502722
 balloon.gd::GDScript/GDScript::2657523557329182059::1751424441::0::1::::<>CanvasLayer<><>0<>0<><>::
@@ -93,9 +95,9 @@ balloon.tscn::PackedScene/PackedScene::6920708712418252924::1751481397::0::1::::
 bird.dialogue::Resource/Resource::1634392477016512159::1751481397::1751502722::1::::<><><>0<>0<>71931368b07981c89f795959e9500e73<>res://.godot/imported/bird.dialogue-1c896771e615c4e00ec167490aea4c67.tres::uid://dbs4435dsf3ry::::res://addons/dialogue_manager/dialogue_resource.gd
 intro note.dialogue::Resource/Resource::7135094041612628471::1751481397::1751502722::1::::<><><>0<>0<>d176a0a5c24a4826060904842d23237a<>res://.godot/imported/intro note.dialogue-f59f0d4b9dbd32874b46366efe81e7d1.tres::uid://dbs4435dsf3ry::::res://addons/dialogue_manager/dialogue_resource.gd
 start_dialogue.gd::GDScript/GDScript::7078836647086673482::1751481397::0::1::::<>DialogueManager<><>0<>0<><>::
-::res://MailboxUI/::1751573522
+::res://MailboxUI/::1751581903
 Box UI@2x.png::CompressedTexture2D::4722342159468905265::1751573522::1751573523::1::::<><><>0<>0<>7f39df6d73083c63a09d8debf781ae8c<>res://.godot/imported/Box UI@2x.png-4fa4a98d169861a95482eb0a156bdc33.ctex::
-MailboxUI.tscn::PackedScene::5267744640313366570::1751572928::0::1::::<><><>0<>0<><>::uid://bvnk8lomek30d::::res://Styles/grey_background.tres
+MailboxUI.tscn::PackedScene::5267744640313366570::1751581903::0::1::::<><><>0<>0<><>::uid://bvnk8lomek30d::::res://Styles/grey_background.tres<>uid://b8jsjx7j4udl6::::res://MailboxUI/Box UI@2x.png<>uid://cwopcdacto5tq::::res://Assets/Placeholder TokenScroll.png
 ::res://Scripts/::1751481397
 interactable.gd::GDScript/GDScript::3587457160266120561::1751481397::0::1::::interactable<>Area2D<><>0<>0<><>::
 scene_inst_interact.gd::GDScript/GDScript::2577632914625578151::1751481397::0::1::::<>Node<><>0<>0<><>::
