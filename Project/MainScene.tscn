@@ -3,11 +3,14 @@
 [ext_resource type="Texture2D" uid="uid://dbngca386s1ii" path="res://Assets/TreeDemo.png" id="1_3mqji"]
 [ext_resource type="Script" uid="uid://d2cl0ccetonyb" path="res://camera_system.gd" id="1_rpqi1"]
 [ext_resource type="Script" uid="uid://brd15o7xweaar" path="res://scripts/interactable.gd" id="2_x4av3"]
+<<<<<<< HEAD
 [ext_resource type="Script" uid="uid://c74bn1t0f57ms" path="res://dialogue/start_dialogue.gd" id="4_uxrcv"]
 [ext_resource type="Resource" uid="uid://c8wj7ru65ohmt" path="res://dialogue/intro note.dialogue" id="5_a814b"]
 [ext_resource type="Resource" uid="uid://xjyg8lppk20b" path="res://dialogue/bird.dialogue" id="5_rf2cd"]
 [ext_resource type="Script" uid="uid://bcyvics8fkqx0" path="res://scripts/scene_inst_interact.gd" id="7_5crlr"]
 [ext_resource type="PackedScene" uid="uid://m780u6uv7dg7" path="res://mailbox_popup.tscn" id="8_hbc2u"]
+=======
+>>>>>>> 00cb59dfcce830790e721e80fffd5c2a9b397d72
 
 [sub_resource type="Curve2D" id="Curve2D_uxrcv"]
 _data = {
