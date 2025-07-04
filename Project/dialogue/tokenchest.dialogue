@@ -1,0 +1,32 @@
+~ start
+if DialogueGlobals.tokenintro_found == false
+	You find a strange box sitting on a branch.
+	You hear noise coming from the box, as if someone is inside.
+	- Open
+		A racoon wearing a gold monocle springs out of the box.
+		Racoon: Hey there neighbor, you need something?
+		- why are you in a box?
+			Racoon: Oh, well this isn't just any box. This is my Token box!
+			Racoon: I'm sitting here because they happen to be quite valuable, I can't just leave them unattended!
+			- Can you tell me more about the tokens?
+				Racoon: Of course I can!
+				Racoon: So tokens are these wooden coins that were made with the help of the NoiseBridge makerspace.
+				#Racoon: vlavla
+				Racoon: You can get them by making things and participating in Canopies events,
+				Racoon: and at the end of the week you will be able to spend them on cool prizes!
+				Racoon: I heard that the hermit thrush is handing out invitations to a program happening monday,
+				Racoon: If you want to get in on this too, you should go check it out!
+			- Say goodbye
+				Racoon: Ok, well I'll see you around!
+	- Leave it be
+	=> END
+
+	#	theres a note inside, its now added to your mailbox!
+	#	This is a token chest!
+	#	Tokens are phisical coins that you will get from participating in varios events throughout the week.
+	#	At the end of the week. we will get togeather to share what you made,
+	#	and more inportantly, redeam your tokens for awesome prizes!
+#else
+	
+	#Go check your mailbox to learn more.
+=> END
