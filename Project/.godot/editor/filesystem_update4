@@ -2,3 +2,4 @@ res://MainScene.tscn
 res://MailboxUI/MailboxUI.tscn
 res://Mailbox.gd
 res://MailboxUI/mailbox_ui.gd
+res://mailbox_popup.tscn

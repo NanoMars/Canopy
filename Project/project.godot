@@ -24,6 +24,11 @@ DialogueGlobals="*res://dialogue_globals.gd"
 
 runtime/balloon_path="res://dialogue/balloon.tscn"
 
+[display]
+
+window/stretch/mode="viewport"
+window/stretch/aspect="expand"
+
 [editor_plugins]
 
 enabled=PackedStringArray("res://addons/dialogue_manager/plugin.cfg")
