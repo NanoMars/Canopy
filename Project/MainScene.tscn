@@ -1,4 +1,4 @@
-[gd_scene load_steps=32 format=3 uid="uid://bs88hecpy8tei"]
+[gd_scene load_steps=37 format=3 uid="uid://bs88hecpy8tei"]
 
 [ext_resource type="Texture2D" uid="uid://dbngca386s1ii" path="res://Assets/TreeDemo.png" id="1_3mqji"]
 [ext_resource type="Script" uid="uid://d2cl0ccetonyb" path="res://camera_system.gd" id="1_rpqi1"]
@@ -6,8 +6,9 @@
 [ext_resource type="Script" uid="uid://c74bn1t0f57ms" path="res://dialogue/start_dialogue.gd" id="4_uxrcv"]
 [ext_resource type="Resource" uid="uid://c8wj7ru65ohmt" path="res://dialogue/intro note.dialogue" id="5_a814b"]
 [ext_resource type="Resource" uid="uid://xjyg8lppk20b" path="res://dialogue/bird.dialogue" id="5_rf2cd"]
+[ext_resource type="Texture2D" uid="uid://daje3ouo0ms1s" path="res://Assets/borb 2.png" id="6_amtbh"]
 [ext_resource type="Script" uid="uid://bcyvics8fkqx0" path="res://scripts/scene_inst_interact.gd" id="7_5crlr"]
-[ext_resource type="Texture2D" uid="uid://bahi7r132dokj" path="res://Assets/IMG_2337.png" id="8_h86nx"]
+[ext_resource type="Texture2D" uid="uid://ctccdbapdo8jw" path="res://Assets/IMG_2337.png" id="8_h86nx"]
 [ext_resource type="PackedScene" uid="uid://m780u6uv7dg7" path="res://mailbox_popup.tscn" id="8_hbc2u"]
 [ext_resource type="Texture2D" uid="uid://buewdxkj18fqp" path="res://Assets/IMG_2336.png" id="9_7jkkr"]
 [ext_resource type="Resource" uid="uid://dfpbfva30qwdv" path="res://dialogue/tokenchest.dialogue" id="10_amtbh"]
@@ -17,6 +18,7 @@
 [ext_resource type="Texture2D" uid="uid://yuw3dknnggeu" path="res://Assets/Firefly.png" id="12_8qg48"]
 [ext_resource type="Texture2D" uid="uid://bcs4xcod1fcft" path="res://Assets/ParalaxStuff/1 (1).png" id="12_anuui"]
 [ext_resource type="Texture2D" uid="uid://cfw0ilhd0e8hj" path="res://Assets/ParalaxStuff/10.png" id="12_yvb8b"]
+[ext_resource type="Script" uid="uid://bqhu0oteg56hr" path="res://scripts/mute_audio.gd" id="13_6dw4c"]
 [ext_resource type="Texture2D" uid="uid://bwjclkuhcog41" path="res://Assets/ParalaxStuff/2.png" id="13_8qg48"]
 [ext_resource type="Texture2D" uid="uid://c5tfax3liy5f1" path="res://Assets/ParalaxStuff/3.png" id="14_1ms6g"]
 [ext_resource type="Texture2D" uid="uid://cqtarisprw7q0" path="res://Assets/ParalaxStuff/4.png" id="15_h86nx"]
@@ -25,6 +27,8 @@
 [ext_resource type="Texture2D" uid="uid://bg0q4sc0h4jx2" path="res://Assets/ParalaxStuff/7.png" id="18_obg7t"]
 [ext_resource type="Texture2D" uid="uid://bosepcvfuse7y" path="res://Assets/ParalaxStuff/8 (1).png" id="19_v3bin"]
 [ext_resource type="Texture2D" uid="uid://qaxdip1svuk4" path="res://Assets/ParalaxStuff/9.png" id="20_6dw4c"]
+[ext_resource type="AudioStream" uid="uid://djbey6sqgymr8" path="res://audio/Hermit Thrush Singing.mp3" id="27_v3bin"]
+[ext_resource type="AudioStream" uid="uid://cdcmw3ygxs2pd" path="res://audio/nuaturenoises 1.mp3" id="29_6dw4c"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_rpqi1"]
 radius = 138.708
@@ -32,6 +36,9 @@ radius = 138.708
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_a814b"]
 radius = 18.824
 height = 52.6445
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6dw4c"]
+size = Vector2(380, 264)
 
 [sub_resource type="Curve2D" id="Curve2D_uxrcv"]
 _data = {
@@ -91,7 +98,7 @@ script = ExtResource("4_uxrcv")
 dialogue_res = ExtResource("5_a814b")
 
 [node name="bird" type="Area2D" parent="Control/Node"]
-position = Vector2(443, -556)
+position = Vector2(523, -513)
 script = ExtResource("2_x4av3")
 metadata/_custom_type_script = "uid://brd15o7xweaar"
 
@@ -101,6 +108,11 @@ shape = SubResource("CircleShape2D_rpqi1")
 [node name="start_dialogue" type="Node" parent="Control/Node/bird" groups=["interactable"]]
 script = ExtResource("4_uxrcv")
 dialogue_res = ExtResource("5_rf2cd")
+
+[node name="Borb2" type="Sprite2D" parent="Control/Node/bird"]
+position = Vector2(31, 25)
+scale = Vector2(0.141543, 0.141543)
+texture = ExtResource("6_amtbh")
 
 [node name="mailbox" type="Area2D" parent="Control/Node"]
 position = Vector2(1202, 310)
@@ -142,13 +154,25 @@ texture = ExtResource("9_7jkkr")
 [node name="openclose" type="Node" parent="Control/Node/tokenchest" groups=["openclose"]]
 script = ExtResource("11_7jkkr")
 
+[node name="audio" type="Area2D" parent="Control/Node"]
+position = Vector2(329, 1786)
+script = ExtResource("2_x4av3")
+metadata/_custom_type_script = "uid://brd15o7xweaar"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Control/Node/audio"]
+position = Vector2(13, -19)
+shape = SubResource("RectangleShape2D_6dw4c")
+
+[node name="mute audio" type="Node" parent="Control/Node/audio" groups=["interactable"]]
+script = ExtResource("13_6dw4c")
+
 [node name="CameraManager" type="CanvasLayer" parent="." node_paths=PackedStringArray("path_follow", "camera_path")]
 script = ExtResource("1_rpqi1")
 path_follow = NodePath("CameraPath/CameraThingy")
 camera_path = NodePath("CameraPath")
-scroll_goal_increment = 100000.0
+scroll_goal_increment = 10000.0
 pan_goal_increment = 1500.0
-max_goal_velocity = 1500.0
+max_goal_velocity = 3000.0
 marker_elasticity = 6.0
 marker_drag = 0.8
 
@@ -275,3 +299,13 @@ motion_offset = Vector2(-110.75, 263.07)
 
 [node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer10"]
 texture = ExtResource("12_yvb8b")
+
+[node name="AudioStreamPlayer2" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("27_v3bin")
+autoplay = true
+parameters/looping = true
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("29_6dw4c")
+autoplay = true
+parameters/looping = true

@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cdcmw3ygxs2pd"
+path="res://.godot/imported/nuaturenoises 1.mp3-06e36460c19aed3ae53f98e174ac341f.mp3str"
+
+[deps]
+
+source_file="res://audio/nuaturenoises 1.mp3"
+dest_files=["res://.godot/imported/nuaturenoises 1.mp3-06e36460c19aed3ae53f98e174ac341f.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

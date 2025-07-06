@@ -1,5 +1,6 @@
 res://MainScene.tscn
+res://dialogue/new_theme.tres
 res://MailboxUI/MailboxUI.tscn
-res://Mailbox.gd
-res://MailboxUI/mailbox_ui.gd
 res://mailbox_popup.tscn
+res://dialogue_globals.gd
+res://scripts/mute_audio.gd
