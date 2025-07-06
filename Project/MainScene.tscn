@@ -42,9 +42,9 @@ size = Vector2(380, 264)
 
 [sub_resource type="Curve2D" id="Curve2D_uxrcv"]
 _data = {
-"points": PackedVector2Array(0, 0, 0, 0, 97, -67, -81.6529, -74.5344, 81.6529, 74.5344, 317, 73, -69.513, 253.99, 69.513, -253.99, 639, 249, -8.02073, 331.524, 8.02073, -331.524, 129, -909, 0.657974, 264.532, -0.657974, -264.532, 575, -1617, 0, 212.225, 0, -212.225, 141, -2204, -5.39678, 240.729, 5.39678, -240.729, 604, -2600, -1.72614, 286.539, 1.72614, -286.539, 363, -3011)
+"points": PackedVector2Array(-30.2246, -49.5471, 30.2246, 49.5471, 97, -67, -71.8798, -93.5262, 71.8798, 93.5262, 317, 73, -41.0062, 152.059, 41.0062, -152.059, 581, 56, -8.02073, 331.524, 8.02073, -331.524, 129, -909, 0.657974, 264.532, -0.657974, -264.532, 575, -1617, 0, 212.225, 0, -212.225, 141, -2204, -5.39678, 240.729, 5.39678, -240.729, 604, -2600, -1.14318, 228.243, 1.14318, -228.243, 361, -2885, 45.6151, -178.435, -45.6151, 178.435, 561, -2599, 4.02486, -218.684, -4.02486, 218.684, 177, -2206, 2.68324, -338.088, -2.68324, 338.088, 528, -1613, 3.07467, -328.989, -3.07467, 328.989, 173, -910, -33.5041, -67.806, 33.5041, 67.806, 97, -67)
 }
-point_count = 8
+point_count = 13
 
 [sub_resource type="Curve" id="Curve_anuui"]
 _data = [Vector2(0, 0.473125), 0.0, 0.0, 0, 0, Vector2(0.505102, 1), 0.0, 0.0, 0, 0, Vector2(1, 0), 0.0, 0.0, 0, 0]
@@ -181,11 +181,10 @@ position = Vector2(-410, 1260)
 curve = SubResource("Curve2D_uxrcv")
 
 [node name="CameraThingy" type="PathFollow2D" parent="CameraManager/CameraPath"]
-position = Vector2(316.431, 72.4793)
+position = Vector2(314.586, 69.9163)
 rotation = -1.19692
 progress = 260.77
 rotates = false
-loop = false
 
 [node name="Camera2D" type="Camera2D" parent="CameraManager/CameraPath/CameraThingy"]
 zoom = Vector2(0.96, 0.96)
@@ -265,9 +264,9 @@ motion_scale = Vector2(1.2, 1.2)
 
 [node name="TextureButton" type="TextureButton" parent="ParallaxBackground/ParallaxLayer9"]
 offset_left = -854.0
-offset_top = -2045.0
+offset_top = -2039.76
 offset_right = 860.0
-offset_bottom = 2051.0
+offset_bottom = 2056.24
 pivot_offset = Vector2(857, 2048)
 texture_normal = ExtResource("20_6dw4c")
 script = ExtResource("10_yvb8b")
