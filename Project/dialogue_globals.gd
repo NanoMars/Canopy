@@ -15,3 +15,9 @@ func _ready() -> void:
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 	pass
+
+func open_chest():
+	get_tree().get_first_node_in_group("openclose").open()
+	#$Control/Node/tokenchest/openclose.open()
+	#$Control/Node/tokenchest/closed.hide()
+	#$Control/Node/tokenchest/open.show()

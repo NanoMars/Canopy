@@ -3,6 +3,7 @@ if DialogueGlobals.tokenintro_found == false
 	You find a strange box sitting on a branch.
 	You hear noise coming from the box, as if someone is inside.
 	- Open
+		do DialogueGlobals.open_chest()
 		A racoon wearing a gold monocle springs out of the box.
 		Racoon: Hey there neighbor, you need something?
 		- why are you in a box?
