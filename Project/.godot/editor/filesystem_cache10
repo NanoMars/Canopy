@@ -1,13 +1,13 @@
 afef6734802ee6c19677a3e11de0f0e6
-::res://::1751822570
-camera_system.gd::GDScript::9059202224926357893::1751821410::0::1::::<>Node<><>0<>0<><>::
-dialogue_globals.gd::GDScript::9069998703275271344::1751821129::0::1::::<>Node<><>0<>0<><>::
+::res://::1751836740
+camera_system.gd::GDScript::9059202224926357893::1751831141::0::1::::<>Node<><>0<>0<><>::
+dialogue_globals.gd::GDScript::9069998703275271344::1751834654::0::1::::<>Node<><>0<>0<><>::
 export_presets.cfg::TextFile::-1::1751168077::0::1::::<><><>0<>0<><>::
 icon.svg::CompressedTexture2D/CompressedTexture2D::3174507910941451293::1751167942::1751167942::1::::<><><>0<>0<>1735ccda93574a6194602013fe0aa1b2<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
-interact test scene.tscn::PackedScene::5065208813026759347::1751822570::0::1::::<><><>0<>0<><>::uid://brd15o7xweaar::::res://Scripts/interactable.gd<>uid://dghbxbgsgpkdh::::res://test_interaction.gd
-Mailbox.gd::GDScript::8689913698141468656::1751822503::0::1::::<>TextureButton<><>0<>0<><>::
-mailbox_popup.tscn::PackedScene::910375616689189896::1751822570::0::1::::<><><>0<>0<><>::
-MainScene.tscn::PackedScene::3719960710278216132::1751822569::0::1::::<><><>0<>0<><>::uid://dbngca386s1ii::::res://Assets/TreeDemo.png<>uid://d2cl0ccetonyb::::res://camera_system.gd<>uid://brd15o7xweaar::::res://Scripts/interactable.gd<>uid://c74bn1t0f57ms::::res://dialogue/start_dialogue.gd<>uid://c8wj7ru65ohmt::::res://dialogue/intro note.dialogue<>uid://xjyg8lppk20b::::res://dialogue/bird.dialogue<>uid://daje3ouo0ms1s::::res://Assets/borb 2.png<>uid://bcyvics8fkqx0::::res://Scripts/scene_inst_interact.gd<>uid://ctccdbapdo8jw::::res://Assets/IMG_2337.png<>uid://m780u6uv7dg7::::res://mailbox_popup.tscn<>uid://buewdxkj18fqp::::res://Assets/IMG_2336.png<>uid://dfpbfva30qwdv::::res://dialogue/tokenchest.dialogue<>uid://dv2pux88opi53::::res://Mailbox.gd<>uid://chby8qgw4v4pa::::res://MailboxUI/MailboxUI.tscn<>uid://xqg58molqn3e::::res://openclose.gd<>uid://yuw3dknnggeu::::res://Assets/Firefly.png<>uid://bcs4xcod1fcft::::res://Assets/ParalaxStuff/1 (1).png<>uid://cfw0ilhd0e8hj::::res://Assets/ParalaxStuff/10.png<>uid://bqhu0oteg56hr::::res://Scripts/mute_audio.gd<>uid://bwjclkuhcog41::::res://Assets/ParalaxStuff/2.png<>uid://c5tfax3liy5f1::::res://Assets/ParalaxStuff/3.png<>uid://cqtarisprw7q0::::res://Assets/ParalaxStuff/4.png<>uid://28gwj5r75o2::::res://Assets/ParalaxStuff/5.png<>uid://bldxmv24lnafp::::res://Assets/ParalaxStuff/6.png<>uid://bg0q4sc0h4jx2::::res://Assets/ParalaxStuff/7.png<>uid://bosepcvfuse7y::::res://Assets/ParalaxStuff/8 (1).png<>uid://qaxdip1svuk4::::res://Assets/ParalaxStuff/9.png<>uid://djbey6sqgymr8::::res://audio/Hermit Thrush Singing.mp3<>uid://cdcmw3ygxs2pd::::res://audio/nuaturenoises 1.mp3
+interact test scene.tscn::PackedScene::5065208813026759347::1751836740::0::1::::<><><>0<>0<><>::uid://brd15o7xweaar::::res://Scripts/interactable.gd<>uid://dghbxbgsgpkdh::::res://test_interaction.gd
+Mailbox.gd::GDScript::8689913698141468656::1751830277::0::1::::<>TextureButton<><>0<>0<><>::
+mailbox_popup.tscn::PackedScene::910375616689189896::1751836740::0::1::::<><><>0<>0<><>::
+MainScene.tscn::PackedScene::3719960710278216132::1751836740::0::1::::<><><>0<>0<><>::uid://dbngca386s1ii::::res://Assets/TreeDemo.png<>uid://d2cl0ccetonyb::::res://camera_system.gd<>uid://brd15o7xweaar::::res://Scripts/interactable.gd<>uid://c74bn1t0f57ms::::res://dialogue/start_dialogue.gd<>uid://c8wj7ru65ohmt::::res://dialogue/intro note.dialogue<>uid://xjyg8lppk20b::::res://dialogue/bird.dialogue<>uid://daje3ouo0ms1s::::res://Assets/borb 2.png<>uid://bcyvics8fkqx0::::res://Scripts/scene_inst_interact.gd<>uid://ctccdbapdo8jw::::res://Assets/IMG_2337.png<>uid://m780u6uv7dg7::::res://mailbox_popup.tscn<>uid://buewdxkj18fqp::::res://Assets/IMG_2336.png<>uid://dfpbfva30qwdv::::res://dialogue/tokenchest.dialogue<>uid://dv2pux88opi53::::res://Mailbox.gd<>uid://chby8qgw4v4pa::::res://MailboxUI/MailboxUI.tscn<>uid://xqg58molqn3e::::res://openclose.gd<>uid://yuw3dknnggeu::::res://Assets/Firefly.png<>uid://bcs4xcod1fcft::::res://Assets/ParalaxStuff/1 (1).png<>uid://cfw0ilhd0e8hj::::res://Assets/ParalaxStuff/10.png<>uid://bqhu0oteg56hr::::res://Scripts/mute_audio.gd<>uid://bwjclkuhcog41::::res://Assets/ParalaxStuff/2.png<>uid://c5tfax3liy5f1::::res://Assets/ParalaxStuff/3.png<>uid://cqtarisprw7q0::::res://Assets/ParalaxStuff/4.png<>uid://28gwj5r75o2::::res://Assets/ParalaxStuff/5.png<>uid://bldxmv24lnafp::::res://Assets/ParalaxStuff/6.png<>uid://bg0q4sc0h4jx2::::res://Assets/ParalaxStuff/7.png<>uid://bosepcvfuse7y::::res://Assets/ParalaxStuff/8 (1).png<>uid://qaxdip1svuk4::::res://Assets/ParalaxStuff/9.png<>uid://djbey6sqgymr8::::res://audio/Hermit Thrush Singing.mp3<>uid://cdcmw3ygxs2pd::::res://audio/nuaturenoises 1.mp3
 openclose.gd::GDScript::1647793075973095136::1751820467::0::1::::<>Node<><>0<>0<><>::
 test_interaction.gd::GDScript::7594947610057128493::1751392087::0::1::::<>Node<><>0<>0<><>::
 ::res://addons/::1751424441
@@ -86,7 +86,7 @@ dialogue_cache.gd::GDScript::9130733358047983146::1751424441::0::1::::DMCache<>N
 ::res://addons/dialogue_manager/views/::1751424441
 main_view.gd::GDScript::5365867961863611872::1751424441::0::1::::<>Control<><>0<>1<><>::
 main_view.tscn::PackedScene::4884668666408697448::1751424441::0::1::::<><><>0<>0<><>::uid://cipjcc7bkh1pc::::res://addons/dialogue_manager/views/main_view.gd<>uid://civ6shmka5e8u::::res://addons/dialogue_manager/components/code_edit.tscn<>uid://dnufpcdrreva3::::res://addons/dialogue_manager/components/files_list.tscn<>uid://ctns6ouwwd68i::::res://addons/dialogue_manager/components/title_list.tscn<>uid://co8yl23idiwbi::::res://addons/dialogue_manager/components/update_button.tscn<>uid://gr8nakpbrhby::::res://addons/dialogue_manager/components/search_and_replace.tscn<>uid://cs8pwrxr5vxix::::res://addons/dialogue_manager/components/errors_panel.tscn<>uid://klpiq4tk3t7a::::res://addons/dialogue_manager/components/code_edit_syntax_highlighter.gd<>uid://cnm67htuohhlo::::res://addons/dialogue_manager/assets/banner.png<>uid://0n7hwviyyly4::::res://addons/dialogue_manager/components/find_in_files.tscn
-::res://Assets/::1751823214
+::res://Assets/::1751823219
 borb 2.png::CompressedTexture2D/CompressedTexture2D::7178135087959232126::1751820467::1751820530::1::::<><><>0<>0<>ade1c83e04f93394197eceead53d7692<>res://.godot/imported/borb 2.png-527af6dc2bf0662d2ebdcc5fcdab8473.ctex::
 Firefly.png::CompressedTexture2D/CompressedTexture2D::1727205752090542420::1751777815::1751777815::1::::<><><>0<>0<>2731d0f1ea8fe0e8811c03cbc103b7c0<>res://.godot/imported/Firefly.png-87329a18e1401cc2f72e56e2074ea85c.ctex::
 green-betel-leaf-isolated-on-transparent-background-png.webp::CompressedTexture2D/CompressedTexture2D::4938211675205102556::1751481561::1751502587::1::::<><><>0<>0<>7ee47f369c855c1949387e77e3441b27<>res://.godot/imported/green-betel-leaf-isolated-on-transparent-background-png.webp-a3dfc7d858a66cc18e2c00d859440d17.ctex::
@@ -97,7 +97,7 @@ NaturalPaper.jpg::CompressedTexture2D::4979968960694409571::1751822901::17518229
 open-red-mailbox-with-letters-3d-illustration-render-png.png::CompressedTexture2D/CompressedTexture2D::6246138912173959319::1751777815::1751777815::1::::<><><>0<>0<>7d7010766bb526fae235a0a157aecbd9<>res://.godot/imported/open-red-mailbox-with-letters-3d-illustration-render-png.png-b894c20cdd9d2a7780214b204f4f2166.ctex::
 Placeholder TokenScroll.png::CompressedTexture2D/CompressedTexture2D::6346811700145955438::1751777815::1751777815::1::::<><><>0<>0<>526848662e7de79191215cf2357c8e60<>res://.godot/imported/Placeholder TokenScroll.png-19b2a85e85fe0dc7c0b69d37eee2bdcb.ctex::
 TreeDemo.png::CompressedTexture2D/CompressedTexture2D::7256655723860578080::1751331113::1751331126::1::::<><><>0<>0<>cd304bf3ac6cfdaf581e5079303f0a97<>res://.godot/imported/TreeDemo.png-c95a4530aa6956dacd5b6926a5d12661.ctex::
-::res://Assets/ParalaxStuff/::1751820467
+::res://Assets/ParalaxStuff/::1751836802
 1 (1).png::CompressedTexture2D/CompressedTexture2D::2565759163437493997::1751777815::1751777815::1::::<><><>0<>0<>630dd9facf03d8ad7e25a7bb617735ad<>res://.godot/imported/1 (1).png-5af9c9da8113bdb26576142374827184.ctex::
 2.png::CompressedTexture2D/CompressedTexture2D::3949296277685706876::1751777815::1751777815::1::::<><><>0<>0<>21018f0ec2d9a584373c42072af49739<>res://.godot/imported/2.png-ee082feda15dec89a901a8e8f4119d89.ctex::
 3.png::CompressedTexture2D/CompressedTexture2D::6918034690621177180::1751777815::1751777815::1::::<><><>0<>0<>f1e817deb4638cc22b8e9b7ee1358cfd<>res://.godot/imported/3.png-b67375562040782a035191e9ad4f0506.ctex::
@@ -108,23 +108,29 @@ TreeDemo.png::CompressedTexture2D/CompressedTexture2D::7256655723860578080::1751
 8 (1).png::CompressedTexture2D/CompressedTexture2D::3406493086820479768::1751777815::1751777815::1::::<><><>0<>0<>a0798edec8643e9925de5e1f5954b31d<>res://.godot/imported/8 (1).png-fae35fb0755a9af488fa49f1a51ca3fb.ctex::
 9.png::CompressedTexture2D/CompressedTexture2D::1124423790988952841::1751777815::1751777815::1::::<><><>0<>0<>95946f2717e6dfe0a5186ac4fa49b4aa<>res://.godot/imported/9.png-841e3ff7581851e483667ab7b7d2f7d2.ctex::
 10.png::CompressedTexture2D/CompressedTexture2D::5170734696076472651::1751777815::1751777815::1::::<><><>0<>0<>1120df30002726b6e7746ed72c1eb8e8<>res://.godot/imported/10.png-1ec277387e7b1b882adc681772ef43a2.ctex::
+Screenshot 2025-07-06 at 2.19.54 pm.png::CompressedTexture2D::1277529316148191332::1751836802::1751836802::1::::<><><>0<>0<>51bf321678ab797c77c57ac2e59fc06d<>res://.godot/imported/Screenshot 2025-07-06 at 2.19.54 pm.png-f8c12fcf0131a09bcd540db804e01fc7.ctex::
 Untitled_Artwork.png::CompressedTexture2D/CompressedTexture2D::274580199198737687::1751820467::1751820467::0::::<><><>0<>0<>b0e8409ebb583f02d76f06126b5629ce<>::
 ::res://audio/::1751820529
 Hermit Thrush Singing.mp3::AudioStreamMP3/AudioStreamMP3::7793313405366714291::1751820467::1751820529::1::::<><><>0<>0<>c0350cf4f6fa162dd0ab70eef197219f<>res://.godot/imported/Hermit Thrush Singing.mp3-baf0b27961ccf68e598961c2f87ff7f4.mp3str::
 nuaturenoises 1.mp3::AudioStreamMP3/AudioStreamMP3::4988306053220721581::1751820467::1751820529::1::::<><><>0<>0<>a82316165fb11add8b5d719398791266<>res://.godot/imported/nuaturenoises 1.mp3-06e36460c19aed3ae53f98e174ac341f.mp3str::
-::res://dialogue/::1751820537
+::res://dialogue/::1751836667
 balloon.gd::GDScript::2657523557329182059::1751424441::0::1::::<>CanvasLayer<><>0<>0<><>::
 balloon.tscn::PackedScene::6920708712418252924::1751820467::0::1::::<><><>0<>0<><>::uid://bd4la3tuo8o1x::::res://dialogue/balloon.gd<>uid://dxgntomq5ung2::::res://dialogue/new_theme.tres<>uid://ckvgyvclnwggo::::res://addons/dialogue_manager/dialogue_label.tscn<>uid://bb52rsfwhkxbn::::res://addons/dialogue_manager/dialogue_responses_menu.gd
 bird.dialogue::Resource/Resource::1634392477016512159::1751481397::1751502722::1::::<><><>0<>0<>71931368b07981c89f795959e9500e73<>res://.godot/imported/bird.dialogue-1c896771e615c4e00ec167490aea4c67.tres::uid://dbs4435dsf3ry::::res://addons/dialogue_manager/dialogue_resource.gd
 intro note.dialogue::Resource/Resource::7135094041612628471::1751481397::1751502722::1::::<><><>0<>0<>d176a0a5c24a4826060904842d23237a<>res://.godot/imported/intro note.dialogue-f59f0d4b9dbd32874b46366efe81e7d1.tres::uid://dbs4435dsf3ry::::res://addons/dialogue_manager/dialogue_resource.gd
 new_theme.tres::Theme::8786815726900976923::1751820537::0::1::::<><><>0<>0<><>::
 start_dialogue.gd::GDScript::7078836647086673482::1751481397::0::1::::<>DialogueManager<><>0<>0<><>::
-tokenchest.dialogue::Resource/Resource::7541242685839260387::1751820467::1751820529::1::::<><><>0<>0<>6c8c253d096c78a7d95e9cf0b9bc5abd<>res://.godot/imported/tokenchest.dialogue-c87ae0f1b1117ca45b2b3d912c761e2a.tres::uid://dbs4435dsf3ry::::res://addons/dialogue_manager/dialogue_resource.gd
-::res://MailboxUI/::1751822570
+tokenchest.dialogue::Resource/Resource::7541242685839260387::1751836666::1751836667::1::::<><><>0<>0<>6c8c253d096c78a7d95e9cf0b9bc5abd<>res://.godot/imported/tokenchest.dialogue-c87ae0f1b1117ca45b2b3d912c761e2a.tres::uid://dbs4435dsf3ry::::res://addons/dialogue_manager/dialogue_resource.gd
+::res://MailboxUI/::1751836780
 Box UI@2x.png::CompressedTexture2D/CompressedTexture2D::4722342159468905265::1751777815::1751777815::1::::<><><>0<>0<>7f39df6d73083c63a09d8debf781ae8c<>res://.godot/imported/Box UI@2x.png-4fa4a98d169861a95482eb0a156bdc33.ctex::
-MailboxUI.tscn::PackedScene::5267744640313366570::1751822570::0::1::::<><><>0<>0<><>::uid://bvnk8lomek30d::::res://Styles/grey_background.tres<>uid://bxgkelbinlrnx::::res://MailboxUI/mailbox_ui.gd<>uid://b8jsjx7j4udl6::::res://MailboxUI/Box UI@2x.png<>uid://cwopcdacto5tq::::res://Assets/Placeholder TokenScroll.png
-mailbox_ui.gd::GDScript::4013765246678452989::1751822475::0::1::::<>Control<><>0<>0<><>::
+MailboxUI.tscn::PackedScene::5267744640313366570::1751836780::0::1::::<><><>0<>0<><>::uid://bvnk8lomek30d::::res://Styles/grey_background.tres<>uid://bxgkelbinlrnx::::res://MailboxUI/mailbox_ui.gd<>uid://b8jsjx7j4udl6::::res://MailboxUI/Box UI@2x.png<>uid://buewdxkj18fqp::::res://Assets/IMG_2336.png<>uid://cc7lmjsuwfef8::::res://Assets/NaturalPaper.jpg<>uid://daje3ouo0ms1s::::res://Assets/borb 2.png
+mailbox_ui.gd::GDScript::4013765246678452989::1751836359::0::1::::<>Control<><>0<>0<><>::
 MailboxCloseButton.gd::GDScript::22271655167375403::1751821957::0::1::::<>Button<><>0<>0<><>::
+::res://MailboxUI/Text/::1751835968
+example.txt::TextFile::-1::1751828240::0::1::::<><><>0<>0<><>::
+placeholder0.txt::TextFile::-1::1751835958::0::1::::<><><>0<>0<><>::
+placeholder1.txt::TextFile::-1::1751835963::0::1::::<><><>0<>0<><>::
+placeholder2.txt::TextFile::-1::1751835968::0::1::::<><><>0<>0<><>::
 ::res://Scripts/::1751820467
 interactable.gd::GDScript::3587457160266120561::1751481397::0::1::::interactable<>Area2D<><>0<>0<><>::
 mute_audio.gd::GDScript::3525152575752150155::1751820467::0::1::::<>Node<><>0<>0<><>::

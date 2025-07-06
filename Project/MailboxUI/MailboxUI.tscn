@@ -1,10 +1,12 @@
-[gd_scene load_steps=8 format=3 uid="uid://chby8qgw4v4pa"]
+[gd_scene load_steps=10 format=3 uid="uid://chby8qgw4v4pa"]
 
 [ext_resource type="StyleBox" uid="uid://bvnk8lomek30d" path="res://Styles/grey_background.tres" id="1_dhkmh"]
 [ext_resource type="Script" uid="uid://bxgkelbinlrnx" path="res://MailboxUI/mailbox_ui.gd" id="1_uo4m8"]
 [ext_resource type="Texture2D" uid="uid://b8jsjx7j4udl6" path="res://MailboxUI/Box UI@2x.png" id="2_o2rh0"]
-[ext_resource type="Texture2D" uid="uid://cwopcdacto5tq" path="res://Assets/Placeholder TokenScroll.png" id="3_2gjnv"]
+[ext_resource type="Texture2D" uid="uid://sg3yrxs7aoue" path="res://Assets/ParalaxStuff/Screenshot 2025-07-06 at 2.19.54 pm.png" id="4_uuhjx"]
+[ext_resource type="Texture2D" uid="uid://buewdxkj18fqp" path="res://Assets/IMG_2336.png" id="4_xoitg"]
 [ext_resource type="Texture2D" uid="uid://cc7lmjsuwfef8" path="res://Assets/NaturalPaper.jpg" id="5_2txgq"]
+[ext_resource type="Texture2D" uid="uid://daje3ouo0ms1s" path="res://Assets/borb 2.png" id="5_xoitg"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_o2rh0"]
 
@@ -24,8 +26,8 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_uo4m8")
-letter_buttons = [NodePath("Mailbox/MarginContainer/VBoxContainer/CenterContainer2/HBoxContainer/TextureButton"), NodePath("Mailbox/MarginContainer/VBoxContainer/CenterContainer2/HBoxContainer/TextureButton2")]
-text_path = Array[String](["res://MailboxUI/Text/example.txt", "res://MailboxUI/Text/example.txt"])
+letter_buttons = [NodePath("Mailbox/MarginContainer/VBoxContainer/CenterContainer2/HBoxContainer/TextureButton3"), NodePath("Mailbox/MarginContainer/VBoxContainer/CenterContainer2/HBoxContainer/TextureButton2"), NodePath("Mailbox/MarginContainer/VBoxContainer/CenterContainer2/HBoxContainer/TextureButton")]
+text_path = Array[String](["res://MailboxUI/Text/placeholder0.txt", "res://MailboxUI/Text/placeholder1.txt", "res://MailboxUI/Text/placeholder2.txt"])
 letter_rtl = NodePath("Page/Page/TextureRect/MarginContainer/RichTextLabel")
 mailbox_ui = NodePath("Mailbox")
 letter_ui = NodePath("Page")
@@ -88,17 +90,24 @@ layout_mode = 2
 [node name="HBoxContainer" type="HBoxContainer" parent="Control/Mailbox/MarginContainer/VBoxContainer/CenterContainer2"]
 layout_mode = 2
 
-[node name="TextureButton" type="TextureButton" parent="Control/Mailbox/MarginContainer/VBoxContainer/CenterContainer2/HBoxContainer"]
-custom_minimum_size = Vector2(165.41, 164.73)
-layout_mode = 2
-texture_normal = ExtResource("3_2gjnv")
-ignore_texture_size = true
-stretch_mode = 4
-
 [node name="TextureButton2" type="TextureButton" parent="Control/Mailbox/MarginContainer/VBoxContainer/CenterContainer2/HBoxContainer"]
 custom_minimum_size = Vector2(165.41, 164.73)
 layout_mode = 2
-texture_normal = ExtResource("3_2gjnv")
+texture_normal = ExtResource("4_uuhjx")
+ignore_texture_size = true
+stretch_mode = 4
+
+[node name="TextureButton" type="TextureButton" parent="Control/Mailbox/MarginContainer/VBoxContainer/CenterContainer2/HBoxContainer"]
+custom_minimum_size = Vector2(165.41, 164.73)
+layout_mode = 2
+texture_normal = ExtResource("4_xoitg")
+ignore_texture_size = true
+stretch_mode = 4
+
+[node name="TextureButton3" type="TextureButton" parent="Control/Mailbox/MarginContainer/VBoxContainer/CenterContainer2/HBoxContainer"]
+custom_minimum_size = Vector2(165.41, 164.73)
+layout_mode = 2
+texture_normal = ExtResource("5_xoitg")
 ignore_texture_size = true
 stretch_mode = 4
 

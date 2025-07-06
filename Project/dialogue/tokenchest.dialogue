@@ -17,6 +17,7 @@ if DialogueGlobals.tokenintro_found == false
 				Racoon: and at the end of the week you will be able to spend them on cool prizes!
 				Racoon: I heard that the hermit thrush is handing out invitations to a program happening monday,
 				Racoon: If you want to get in on this too, you should go check it out!
+				set DialogueGlobals.tokenintro_found = true
 			- Say goodbye
 				Racoon: Ok, well I'll see you around!
 	- Leave it be

@@ -1,9 +1,45 @@
 extends Node
 
-var intronote_found = false
-var invitation_found = false
-var tokenintro_found = false
-var photo_found = false
+var intronote_found: bool:
+	set(value):
+		if value != _intronote_found:
+			_intronote_found = value
+			intronote_found_changed.emit(value)
+	get():
+		return _intronote_found
+
+var invitation_found: bool:
+	set(value):
+		if value != _invitation_found:
+			_invitation_found = value
+			invitation_found_changed.emit(value)
+	get():
+		return _invitation_found
+
+var tokenintro_found: bool:
+	set(value):
+		if value != _tokenintro_found:
+			_tokenintro_found = value
+			tokenintro_found_changed.emit(value)
+	get():
+		return _tokenintro_found
+var photo_found: bool:
+	set(value):
+		if value != _photo_found:
+			_photo_found = value
+			photo_found_changed.emit(value)
+	get():
+		return _photo_found
+
+var _intronote_found = false
+var _invitation_found = false
+var _tokenintro_found = false
+var _photo_found = false
+
+signal invitation_found_changed(found: bool)
+signal intronote_found_changed(found: bool)
+signal tokenintro_found_changed(found: bool)
+signal photo_found_changed(found: bool)
 
 var bird_interacted = false
 
@@ -57,3 +93,8 @@ func _load():
 		invitation_found = loaded_save_data.invitation_found
 		photo_found = loaded_save_data.photo_found
 		bird_interacted = loaded_save_data.bird_interacted
+		# intronote_found = false
+		# tokenintro_found = false
+		# invitation_found = false
+		# photo_found = false
+		# bird_interacted = false
