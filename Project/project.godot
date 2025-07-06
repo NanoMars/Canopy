@@ -13,7 +13,9 @@ config_version=5
 config/name="Canopy"
 run/main_scene="uid://bs88hecpy8tei"
 config/features=PackedStringArray("4.4", "GL Compatibility")
-config/icon="res://icon.svg"
+boot_splash/bg_color=Color(0.417613, 0.664633, 0.415213, 1)
+boot_splash/image="uid://bkkmfytpcfcdj"
+config/icon="uid://dcamgkdm15mn8"
 
 [autoload]
 

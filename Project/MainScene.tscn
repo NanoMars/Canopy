@@ -172,7 +172,7 @@ path_follow = NodePath("CameraPath/CameraThingy")
 camera_path = NodePath("CameraPath")
 scroll_goal_increment = 10000.0
 pan_goal_increment = 1500.0
-max_goal_velocity = 3000.0
+max_goal_velocity = 1700.0
 marker_elasticity = 6.0
 marker_drag = 0.8
 
