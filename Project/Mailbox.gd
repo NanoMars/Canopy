@@ -1,6 +1,9 @@
 extends TextureButton
 
 @export var mailbox_UI_scene: PackedScene
+@onready var unprocessed_texture = texture_normal
+var unprocessed_bitmap: BitMap = BitMap.new()
+
 
 func _pressed():
 	if mailbox_UI_scene:
@@ -11,3 +14,5 @@ func _pressed():
 
 func _ready():
 	pressed.connect(_pressed)
+	unprocessed_bitmap.create_from_image_alpha(unprocessed_texture.get_image(), 0.1)
+	texture_click_mask = unprocessed_bitmap

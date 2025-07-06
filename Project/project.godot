@@ -27,7 +27,7 @@ runtime/balloon_path="res://dialogue/balloon.tscn"
 [display]
 
 window/stretch/mode="viewport"
-window/stretch/aspect="expand"
+window/stretch/aspect="keep_height"
 
 [editor_plugins]
 
