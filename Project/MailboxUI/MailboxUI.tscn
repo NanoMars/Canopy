@@ -1,9 +1,10 @@
-[gd_scene load_steps=7 format=3 uid="uid://chby8qgw4v4pa"]
+[gd_scene load_steps=8 format=3 uid="uid://chby8qgw4v4pa"]
 
 [ext_resource type="StyleBox" uid="uid://bvnk8lomek30d" path="res://Styles/grey_background.tres" id="1_dhkmh"]
 [ext_resource type="Script" uid="uid://bxgkelbinlrnx" path="res://MailboxUI/mailbox_ui.gd" id="1_uo4m8"]
 [ext_resource type="Texture2D" uid="uid://b8jsjx7j4udl6" path="res://MailboxUI/Box UI@2x.png" id="2_o2rh0"]
 [ext_resource type="Texture2D" uid="uid://cwopcdacto5tq" path="res://Assets/Placeholder TokenScroll.png" id="3_2gjnv"]
+[ext_resource type="Texture2D" uid="uid://cc7lmjsuwfef8" path="res://Assets/NaturalPaper.jpg" id="5_2txgq"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_o2rh0"]
 
@@ -13,7 +14,9 @@ Button/styles/hover = ExtResource("1_dhkmh")
 Button/styles/normal = ExtResource("1_dhkmh")
 Button/styles/pressed = ExtResource("1_dhkmh")
 
-[node name="Control" type="Control" node_paths=PackedStringArray("close_button")]
+[node name="CanvasLayer" type="CanvasLayer"]
+
+[node name="Control" type="Control" parent="." node_paths=PackedStringArray("letter_buttons", "letter_rtl", "mailbox_ui", "letter_ui")]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -21,9 +24,13 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_uo4m8")
-close_button = NodePath("Button")
+letter_buttons = [NodePath("Mailbox/MarginContainer/VBoxContainer/CenterContainer2/HBoxContainer/TextureButton"), NodePath("Mailbox/MarginContainer/VBoxContainer/CenterContainer2/HBoxContainer/TextureButton2")]
+text_path = Array[String](["res://MailboxUI/Text/example.txt", "res://MailboxUI/Text/example.txt"])
+letter_rtl = NodePath("Page/Page/TextureRect/MarginContainer/RichTextLabel")
+mailbox_ui = NodePath("Mailbox")
+letter_ui = NodePath("Page")
 
-[node name="Button" type="Button" parent="."]
+[node name="Button" type="Button" parent="Control"]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -32,15 +39,16 @@ grow_horizontal = 2
 grow_vertical = 2
 theme = SubResource("Theme_2gjnv")
 
-[node name="CenterContainer" type="CenterContainer" parent="."]
+[node name="Mailbox" type="CenterContainer" parent="Control"]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+mouse_filter = 2
 
-[node name="MarginContainer" type="MarginContainer" parent="CenterContainer"]
+[node name="MarginContainer" type="MarginContainer" parent="Control/Mailbox"]
 custom_minimum_size = Vector2(500, 250)
 layout_mode = 2
 theme_override_constants/margin_left = 30
@@ -48,14 +56,14 @@ theme_override_constants/margin_top = 30
 theme_override_constants/margin_right = 30
 theme_override_constants/margin_bottom = 30
 
-[node name="MarginContainer" type="MarginContainer" parent="CenterContainer/MarginContainer"]
+[node name="MarginContainer" type="MarginContainer" parent="Control/Mailbox/MarginContainer"]
 layout_mode = 2
 theme_override_constants/margin_left = -30
 theme_override_constants/margin_top = -30
 theme_override_constants/margin_right = -30
 theme_override_constants/margin_bottom = -30
 
-[node name="NinePatchRect" type="NinePatchRect" parent="CenterContainer/MarginContainer/MarginContainer"]
+[node name="NinePatchRect" type="NinePatchRect" parent="Control/Mailbox/MarginContainer/MarginContainer"]
 custom_minimum_size = Vector2(60, 60)
 layout_mode = 2
 texture = ExtResource("2_o2rh0")
@@ -64,37 +72,86 @@ patch_margin_top = 25
 patch_margin_right = 25
 patch_margin_bottom = 25
 
-[node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer/MarginContainer"]
+[node name="VBoxContainer" type="VBoxContainer" parent="Control/Mailbox/MarginContainer"]
 layout_mode = 2
 
-[node name="CenterContainer" type="CenterContainer" parent="CenterContainer/MarginContainer/VBoxContainer"]
+[node name="CenterContainer" type="CenterContainer" parent="Control/Mailbox/MarginContainer/VBoxContainer"]
 layout_mode = 2
 
-[node name="Label" type="Label" parent="CenterContainer/MarginContainer/VBoxContainer/CenterContainer"]
+[node name="Label" type="Label" parent="Control/Mailbox/MarginContainer/VBoxContainer/CenterContainer"]
 layout_mode = 2
 text = "Mailbox"
 
-[node name="HFlowContainer" type="HFlowContainer" parent="CenterContainer/MarginContainer/VBoxContainer"]
+[node name="CenterContainer2" type="CenterContainer" parent="Control/Mailbox/MarginContainer/VBoxContainer"]
 layout_mode = 2
-size_flags_vertical = 3
 
-[node name="TextureRect" type="TextureRect" parent="CenterContainer/MarginContainer/VBoxContainer/HFlowContainer"]
-custom_minimum_size = Vector2(130, 130)
+[node name="HBoxContainer" type="HBoxContainer" parent="Control/Mailbox/MarginContainer/VBoxContainer/CenterContainer2"]
 layout_mode = 2
-texture = ExtResource("3_2gjnv")
-expand_mode = 1
+
+[node name="TextureButton" type="TextureButton" parent="Control/Mailbox/MarginContainer/VBoxContainer/CenterContainer2/HBoxContainer"]
+custom_minimum_size = Vector2(165.41, 164.73)
+layout_mode = 2
+texture_normal = ExtResource("3_2gjnv")
+ignore_texture_size = true
 stretch_mode = 4
 
-[node name="TextureRect2" type="TextureRect" parent="CenterContainer/MarginContainer/VBoxContainer/HFlowContainer"]
-custom_minimum_size = Vector2(130, 130)
+[node name="TextureButton2" type="TextureButton" parent="Control/Mailbox/MarginContainer/VBoxContainer/CenterContainer2/HBoxContainer"]
+custom_minimum_size = Vector2(165.41, 164.73)
 layout_mode = 2
-texture = ExtResource("3_2gjnv")
-expand_mode = 1
+texture_normal = ExtResource("3_2gjnv")
+ignore_texture_size = true
 stretch_mode = 4
 
-[node name="TextureRect3" type="TextureRect" parent="CenterContainer/MarginContainer/VBoxContainer/HFlowContainer"]
-custom_minimum_size = Vector2(130, 130)
+[node name="Page" type="Control" parent="Control"]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Button" type="Button" parent="Control/Page"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+flat = true
+
+[node name="Page" type="CenterContainer" parent="Control/Page"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="TextureRect" type="TextureRect" parent="Control/Page/Page"]
+custom_minimum_size = Vector2(300, 400)
 layout_mode = 2
-texture = ExtResource("3_2gjnv")
+texture = ExtResource("5_2txgq")
 expand_mode = 1
-stretch_mode = 4
+stretch_mode = 1
+
+[node name="MarginContainer" type="MarginContainer" parent="Control/Page/Page/TextureRect"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 15
+theme_override_constants/margin_top = 15
+theme_override_constants/margin_right = 15
+theme_override_constants/margin_bottom = 15
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Control/Page/Page/TextureRect/MarginContainer"]
+layout_mode = 2
+theme_override_colors/default_color = Color(0.101008, 0.0251901, 0.0121393, 1)
+text = "Rich Text"
+
+[connection signal="pressed" from="Control/Button" to="Control" method="_on_button_pressed"]
+[connection signal="pressed" from="Control/Page/Button" to="Control" method="_on_page_close_pressed"]

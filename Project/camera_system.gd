@@ -4,7 +4,7 @@ extends Node
 @export var camera_path: Path2D
 @onready var max_progress: float = camera_path.curve.get_baked_length()
 
-var goal: float = 0.0
+var goal: float = 260.0
 @export var scroll_goal_increment: float = 6
 @export var pan_goal_increment: float = 1
 var goal_velocity: float = 0.0

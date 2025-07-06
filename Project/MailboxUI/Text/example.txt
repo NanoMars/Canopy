@@ -1,0 +1,2 @@
+[center][b]Welcome to the Game![/b][/center]
+This is [i]rich text[/i] with [color=red]colors[/color] and [url=https://godotengine.org]links[/url].

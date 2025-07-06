@@ -11,10 +11,6 @@ var bird_interacted = false
 func _ready() -> void:
 	_load()
 
-
-func _process(delta: float) -> void:
-	print(intronote_found)
-
 func open_chest():
 	get_tree().get_first_node_in_group("openclose").open()
 	#$Control/Node/tokenchest/openclose.open()
