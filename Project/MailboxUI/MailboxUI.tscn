@@ -27,7 +27,6 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_uo4m8")
 letter_buttons = [NodePath("Mailbox/MarginContainer/VBoxContainer/CenterContainer2/HBoxContainer/TextureButton3"), NodePath("Mailbox/MarginContainer/VBoxContainer/CenterContainer2/HBoxContainer/TextureButton2"), NodePath("Mailbox/MarginContainer/VBoxContainer/CenterContainer2/HBoxContainer/TextureButton")]
-text_path = Array[String](["res://MailboxUI/Text/intro note.txt", "res://MailboxUI/Text/invitation letter.txt", "res://MailboxUI/Text/Token.txt"])
 letter_rtl = NodePath("Page/Page/TextureRect/MarginContainer/RichTextLabel")
 mailbox_ui = NodePath("Mailbox")
 letter_ui = NodePath("Page")
